@@ -1,0 +1,43 @@
+{
+  "name": "karma-jasmine-group",
+  "version": "1.0.0",
+  "description": "Karma plugin for Jasmine grouping test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RuizhiWang/karma-jasmine-group.git"
+  },
+  "dependencies": {
+    "jasmine-group": "^1.0.0"
+  },
+  "peerDependencies": {
+    "karma": "~0.12.0"
+  },
+  "keywords": [
+    "karma-plugin",
+    "jasmine-plugin",
+    "group-test"
+  ],
+  "author": "Ruizhi Wang, Felice Geracitano",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/RuizhiWang/karma-jasmine-group/blob/master/LICENSE"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "felicege",
+      "email": "felice.geracitano@gmail.com",
+      "name": "Ruizhi",
+      "email": "crystalplan999@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/RuizhiWang/karma-jasmine-group/issues"
+  },
+  "homepage": "https://github.com/RuizhiWang/karma-jasmine-group"
+}
