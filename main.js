@@ -14,9 +14,9 @@ var groupFramework = function(files, groupsConfig) {
         template += groupsConfig.join("','");
         template += "'];";
     }
-    var modulePath = path.resolve(require.resolve('jasmine-test-group'));
-    var configFilegPath = modulePath.replace('jasmine-test-group.js', 'group-config.js');
-    var executionFilegPath = modulePath.replace('jasmine-test-group.js', 'execute-tests.js');
+    var modulePath = path.resolve(require.resolve('jasmine-group'));
+    var configFilegPath = modulePath.replace('jasmine-group.js', 'group-config.js');
+    var executionFilegPath = modulePath.replace('jasmine-group.js', 'execute-tests.js');
     fs.writeFile(configFilegPath, template, function (err) {
         if (err) {
             console.warn('[Error] Failed to override group-config.js: ', err);
