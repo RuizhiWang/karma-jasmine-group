@@ -30,5 +30,5 @@ var groupFramework = function(files, groupsConfig) {
 groupFramework.$inject = ['config.files', 'config.groupsConfig'];
 
 module.exports = {
-    'framework:jasmine-test-group': ['factory', groupFramework]
+    'framework:karma-jasmine-group': ['factory', groupFramework]
 };
