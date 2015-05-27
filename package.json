@@ -1,6 +1,6 @@
 {
   "name": "karma-jasmine-group",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Karma plugin for Jasmine grouping test",
   "main": "main.js",
   "scripts": {
