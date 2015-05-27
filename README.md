@@ -1,26 +1,42 @@
 # karma-jasmine-group
-Karma plugin for Jasmine grouping test
+Karma adapter for Jasmine plugin to run JavaScript unit tests by groups and priorities.
 
-# Synopsis  
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)  
- 
-# Code Example  
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.  
+# Installation
+The easiest way is to keep <code>karma-jasmine-group</code> as a devDependency in your <code>package.json</code>.
+```javascript
+  {
+    "devDependencies": {
+        "jasmine-core": "^2.2.0",
+        "karma": "^0.12.31",
+        "karma-jasmine": "^0.3.5",
+        "karma-jasmine-group": "^1.0.1"
+    }
+  }
+```
+You can simple do it by running following command inside of your project directory:
+```
+    npm install karma-jasmine-group --save-dev
+```
 
-# Motivation  
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.  
+# Configuration
+1. Add <code>'karma-jasmine-group'</code> to the <code>frameworks</code> key in your Karma configuration, before <code>'jasmine'</code>;
+2. Add a new key <code>groupsConfig</code> with a list of groups in your Karma configuration.  
+ **Please Note**: the test groups will be run in same order as you provided in the list. 
+```javascript
+module.exports = function(config) {
+  config.set({
+    frameworks: ['karma-jasmine-group', 'jasmine'],
+    groupsConfig: ['group1', 'group2', 'group3']
+  });
+}
+```
 
-# Installation  
-Provide code examples and explanations of how to get the project.  
+# Dependencies and Usage
+This plugin is based on <code>jasmine-group</code> plugin, for details, please see [jasmine-group](https://github.com/RuizhiWang/jasmine-group)
 
-# API Reference  
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.  
+# Contributors
+Ruizhi Wang: crystalplan999@gmail.com  
+Felice Geracitano: felice.geracitano@gmail.com
 
-# Tests  
-Describe and show how to run the tests with code examples.  
-
-# Contributors  
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.  
-
-# License  
-A short snippet describing the license (MIT, Apache, etc.
+# License
+MIT license, please see <code>LICENSE</code> file for details.
