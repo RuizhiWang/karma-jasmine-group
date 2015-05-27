@@ -1,6 +1,6 @@
 {
   "name": "karma-jasmine-group",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Karma plugin for Jasmine grouping test",
   "main": "main.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/RuizhiWang/karma-jasmine-group.git"
   },
   "dependencies": {
-    "jasmine-group": "^1.0.0"
+    "jasmine-group": "^1.0.1"
   },
   "peerDependencies": {
     "karma": "~0.12.0"
