@@ -32,7 +32,20 @@ module.exports = function(config) {
 ```
 
 # Dependencies and Usage
-This plugin is based on <code>jasmine-group</code> plugin, for details, please see [jasmine-group](https://github.com/RuizhiWang/jasmine-group)
+To use this plug-in you will need to define groups in your tests, for details and installation, please see [jasmine-group](https://github.com/RuizhiWang/jasmine-group).
+
+<code>jasmine-group</code> plug-in will provide support using 'gdescribe' to set a group in your test case
+
+example:
+```javascript
+    gdescribe('group1', 'TestSuit description', function() {
+        it('TestCase description', function() {
+            ......
+        });
+    });
+```
+
+
 
 # Contributors
 Ruizhi Wang: crystalplan999@gmail.com  
