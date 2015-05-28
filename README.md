@@ -9,7 +9,7 @@ The easiest way is to keep <code>karma-jasmine-group</code> as a devDependency i
         "jasmine-core": "^2.2.0",
         "karma": "^0.12.31",
         "karma-jasmine": "^0.3.5",
-        "karma-jasmine-group": "^1.0.1"
+        "karma-jasmine-group": "^1.0.4"
     }
   }
 ```
