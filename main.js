@@ -9,6 +9,9 @@ var createPattern = function(path) {
 
 var groupFramework = function(files, groupsConfig) {
     var template = 'var groupsConfig = [];';
+    if (typeof groupsConfig === 'string') {
+        groupsConfig = (groupsConfig === '') ? [] : groupsConfig.split(',');
+    }
     if (groupsConfig && groupsConfig.length > 0) {
         template = "var groupsConfig = ['";
         template += groupsConfig.join("','");
