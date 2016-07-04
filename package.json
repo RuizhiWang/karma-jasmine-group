@@ -14,7 +14,7 @@
     "jasmine-group": "^1.0.1"
   },
   "peerDependencies": {
-    "karma": "~0.13.22"
+    "karma": "~0.12.0"
   },
   "keywords": [
     "karma-plugin",
